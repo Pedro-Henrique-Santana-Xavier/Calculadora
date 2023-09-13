@@ -1,10 +1,10 @@
 :root{
---background-color: rgba(214, 193, 198, 1);
---calculator-body-color: rgba(254, 234, 233, 1);
+--background-color: #6366f1;
+--calculator-body-color: #52525b;
 --calculator-body-shadow: rgba(0, 0, 0, 0.5);
 
---numbers-background-color: rgba(255, 216, 214, 1);
---numbers-color: rgba(188, 70, 96, 1);
+--numbers-background-color: #111827;
+--numbers-color: #e2e8f0;
 
 --operators-background-color: rgba(188, 70, 96, 1); 
 --operators-color: rgba(255, 216, 214, 1);
@@ -20,9 +20,16 @@
 body{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
+}
+
+.titulo{
+  margin-bottom: 1cm;
+  font-size: 1cm;
+  color: var(--numbers-color);
 }
 
 .container{
@@ -44,7 +51,7 @@ body{
   text-align: right;
   margin-bottom: 10px;
   font-size: 25px;
-  color: var(--numbers-color);
+  color: var(--numbers-background-color);
 }
 
 .buttons{
@@ -65,5 +72,9 @@ body{
 
 .buttons button:active{
   transform: scale(0.99);
+}
+
+.operator{
+  color: var(--operators-color);
 }
 
